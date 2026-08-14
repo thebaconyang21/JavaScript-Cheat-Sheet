@@ -11,44 +11,54 @@
 <body>
     <h1>JavaScript Cheat Sheet</h1>
 
-    <div class="lesson-container">
-        <div class="lesson">
-            <h2>1.Variables</h2>
-            <p>Variables are used to store information.</p>
+    <h2>JavaScript Introduction</h2>
 
-            <h3>Example:</h3>
+    
+    <div class="lesson">
+        <!-- <h3>1.Variables</h3> -->
+        <h3>1. JavaScript Can Change HTML Content</h3>
 
-            <pre>
-            let name = "Beah";
-            console.log(name);
-            </pre>
+        <h4>Example Code:</h4>
 
-            <h3>Output:</h3>
+        <pre><code>
+        &lt;p id="demo"&gt;JavaScript can change HTML content.&lt;/p&gt;
 
-            <div class="output">
-                Beah
-            </div>
-        </div>
+        &lt;button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'&gt;
+            Click Me!
+        &lt;/button&gt;
+        </code></pre>
+            
 
-         <div class="lesson">
-            <h2>2. Data Types</h2>
+        <h4>Output:</h4>
 
-            <p>JavaScript has different data types.</p>
+        <div class="output">
+            <p id="demo">JavaScript can change HTML content.</p>
 
-            <h3>Example:</h3>
-
-            <pre>
-                let age = 19;
-                console.log(age);
-            </pre>
-
-            <h3>Output:</h3>
-
-            <div class="output">
-                19
-            </div>
+            <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>
+                Click Me!
+            </button>
         </div>
     </div>
+
+    <div class="lesson">
+        <!-- <h3>2. Data Types</h3> -->
+
+        <h3>JavaScript has different data types.</h3>
+
+        <h4>Example Code:</h4>
+
+        <pre>
+        let age = 19;
+        console.log(age);
+        </pre>
+
+        <h4>Output:</h4>
+
+        <div class="output">
+            19
+        </div>
+    </div>
+    
     
 
     <!-- connects your HTML → JavaScript -->

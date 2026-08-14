@@ -8,19 +8,25 @@ h1 {
     text-align: center;
 }
 
-.lesson-container {
-    /* It tells the browser: Put the lesson boxes beside each other. */
-    display: flex; 
-    /* gives them some space between them. */
-    gap: 20px;
+h2 {
+    text-align: center;
 }
+
+/* .lesson-container {
+    /* It tells the browser: Put the lesson boxes beside each other. */
+    /* display: flex;  */
+    /* gives them some space between them. */
+    /* gap: 20px; */
+/* } */
 
 .lesson {
     background-color: white;
     padding: 20px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
+    margin: 20px 0;
     border-radius: 10px;
-    flex: 1;
+    /* flex: 1; */
+    border: 1px solid #ccc;
 }
 
 .output {
