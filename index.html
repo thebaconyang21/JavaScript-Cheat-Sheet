@@ -93,8 +93,6 @@
 
         <p>Remember: Changing the style of an HTML element, is a variant of changing an HTML attribute:</p>
     </div>
-
-
     
     <div class="lesson">
         <!-- <h3>2. Data Types</h3> -->
@@ -119,8 +117,36 @@
 
         <p>Remember: Hiding HTML elements can be done by changing the display style.</p>
     </div>
-    
-    
+
+    <div class="lesson">
+
+        <h3>5. JavaScript Can Show HTML Elements</h3>
+
+        <h4>Example Code:</h4>
+
+        <pre><code>
+    &lt;p id="demo" style="display:none"&gt;Hello JavaScript!&lt;/p&gt;
+
+    &lt;button type="button" onclick="document.getElementById('demo').style.display='block'"&gt;
+        Click Me!
+    &lt;/button&gt;
+        </code></pre>
+
+        <h4>Output:</h4>
+
+        <div class="output">
+
+            <p id="demo1" style="display:none">
+                Hello JavaScript!
+            </p>
+
+            <button type="button" onclick="document.getElementById('demo1').style.display='block'">
+                Click Me!
+            </button>
+
+        </div>
+
+    </div>      
 
     <!-- connects your HTML → JavaScript -->
     <script src="script.js"></script>
