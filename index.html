@@ -7,8 +7,14 @@
 
     <!-- connects your HTML → CSS -->
     <link rel="stylesheet" href="style.css"> 
+
+    <script>
+    function myFunction() {
+    document.getElementById("demo3").innerHTML = "Paragraph changed.";
+    }
+    </script>
 </head>
-<body>
+<>
     <h1>JavaScript Cheat Sheet</h1>
 
     <h2>JavaScript Introduction</h2>
@@ -163,7 +169,7 @@
 
             <pre><code>
         JavaScript in Body
-        
+
         &lt;p id="demo"&gt;&lt;/p&gt;
 
         &lt;script&gt;
@@ -180,8 +186,91 @@
                 document.getElementById("demo2").innerHTML = "My First JavaScript";
                 </script>
             </div>
-
         </div>    
+
+        <div class="lesson">
+
+            <h3>2. JavaScript Functions and Events</h3>
+            <p>A JavaScript function is a block of JavaScript code, that can be executed when "called" for.</p>
+            <p>For example, a function can be called when an event occurs, like when the user clicks a button.</p>
+
+            <h4> JavaScript in &lt;head&gt; or &lt;body&gt;</h4>
+            <pre>
+You can place any number of scripts in an HTML document.
+Scripts can be placed in the body>, or in the &lt;head&gt; section of an HTML page, or in both.
+            </pre>
+
+            <div class="lesson-container">
+                <div class="lesson">
+                    <h4>1.1 JavaScript in &lt;head&gt;</h4>
+
+                    <pre>
+In this example, a JavaScript function is placed in the <head> section of an HTML page.
+The function is invoked (called) when a button is clicked:
+                    </pre>
+                    
+                    <h4>Example Code:</h4>
+
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;script&gt;
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Demo JavaScript in Head&lt;/h2&gt;
+
+&lt;p id="demo"&gt;A Paragraph.&lt;/p&gt;
+
+&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+
+                    <h4>Output:</h4>
+
+                    <div class="output">
+                        <p id="demo3">A Paragraph.</p>
+
+                        <button type="button" onclick="myFunction()">Try it</button>
+                    </div>
+
+
+                </div>
+
+                <div class="lesson">
+
+                </div>
+
+            </div>
+            <h4>Example Code:</h4>
+
+            <pre><code>
+        JavaScript in Body
+
+        &lt;p id="demo"&gt;&lt;/p&gt;
+
+        &lt;script&gt;
+        document.getElementById("demo").innerHTML = "My First JavaScript";
+        &lt;/script&gt;
+            </code></pre>
+
+            <h4>Output:</h4>
+
+            <div class="output">
+                <p id="demo2"></p>
+
+                <script>
+                document.getElementById("demo2").innerHTML = "My First JavaScript";
+                </script>
+            </div>
+        </div>   
         
     </div>
     

@@ -12,12 +12,12 @@ h2 {
     text-align: center;
 }
 
-/* .lesson-container {
+.lesson-container {
     /* It tells the browser: Put the lesson boxes beside each other. */
-    /* display: flex;  */
+    display: flex;  
     /* gives them some space between them. */
-    /* gap: 20px; */
-/* } */
+    gap: 20px;
+ } 
 
 .lesson {
     background-color: white;
