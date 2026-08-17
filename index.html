@@ -205,7 +205,8 @@ Scripts can be placed in the body>, or in the &lt;head&gt; section of an HTML pa
                     <h4>1.1 JavaScript in &lt;head&gt;</h4>
 
                     <pre>
-In this example, a JavaScript function is placed in the <head> section of an HTML page.
+In this example, a JavaScript function is placed in the <head> section of an 
+HTML page.
 The function is invoked (called) when a button is clicked:
                     </pre>
                     
@@ -245,32 +246,61 @@ function myFunction() {
                 </div>
 
                 <div class="lesson">
+                    <h4>1.2 JavaScript in &lt;body&gt;</h4>
+
+                    <pre>
+In this example, a JavaScript function is placed in the <body> section of an
+HTML page.
+The function is invoked (called) when a button is clicked:
+                    </pre>
+                    
+                    <h4>Example Code:</h4>
+
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Demo JavaScript in Body&lt;/h2&gt;
+
+&lt;p id="demo"&gt;A Paragraph.&lt;/p&gt;
+
+&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+
+                    <h4>Output:</h4>
+
+                    <div class="output">
+                        <p id="demo4">A Paragraph.</p>
+
+                        <button type="button" onclick="myFunction()">Try it</button>
+
+                        <script>
+                        function myFunction() {
+                        document.getElementById("demo4").innerHTML = "Paragraph changed.";
+                        }
+                        </script>
+                    </div>
+
 
                 </div>
-
+        
             </div>
-            <h4>Example Code:</h4>
 
-            <pre><code>
-        JavaScript in Body
-
-        &lt;p id="demo"&gt;&lt;/p&gt;
-
-        &lt;script&gt;
-        document.getElementById("demo").innerHTML = "My First JavaScript";
-        &lt;/script&gt;
-            </code></pre>
-
-            <h4>Output:</h4>
-
-            <div class="output">
-                <p id="demo2"></p>
-
-                <script>
-                document.getElementById("demo2").innerHTML = "My First JavaScript";
-                </script>
-            </div>
         </div>   
+
+        <div class="lesson">
+
+        </div>
         
     </div>
     
